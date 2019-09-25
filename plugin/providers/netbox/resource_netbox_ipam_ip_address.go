@@ -5,8 +5,8 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/Preskton/go-netbox/netbox/client/ipam"
-	"github.com/Preskton/go-netbox/netbox/models"
+	"github.com/aruhier/go-netbox/netbox/client/ipam"
+	"github.com/aruhier/go-netbox/netbox/models"
 	"github.com/hashicorp/terraform/helper/schema"
 )
 
@@ -98,8 +98,8 @@ func resourceNetboxIpamIPAddressCreate(d *schema.ResourceData, meta interface{})
 	out, err := netboxClient.IPAM.IPAMIPAddressesCreate(parm, nil)
 
 	if err != nil {
-		log.Debugf("Failed to execute IPAMIPAddressesCreate: %v", err)
-
+		log.Debugf("Failed to execute TESTERROR IPAMIPAddressesCreate: %v", err)
+		log.Debugf("TEST_ERROR")
 		return err
 	}
 

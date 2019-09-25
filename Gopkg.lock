@@ -20,6 +20,14 @@
   revision = "4b9e0c3eaf779aec03ee46ccaa9e64f18c3d265a"
 
 [[projects]]
+  digest = "1:2a1bf97a2d30df4e4ae1d8ee7093f7e53b0d88d302f11490b9ec261e0495f2a1"
+  name = "github.com/Preskton/terraform-provider-netbox"
+  packages = ["plugin/providers/netbox"]
+  pruneopts = "UT"
+  revision = "eea8547b0fcb5e7a3ad38c63778cf79e72860209"
+  version = "0.1.7-alpha"
+
+[[projects]]
   digest = "1:d1665c44bd5db19aaee18d1b6233c99b0b9a986e8bccb24ef54747547a48027f"
   name = "github.com/PuerkitoBio/purell"
   packages = ["."]
@@ -65,6 +73,17 @@
   pruneopts = "UT"
   revision = "1a2de0c21c94309923825da3df33a4381872c795"
   version = "v1.0.0"
+
+[[projects]]
+  branch = "master"
+  digest = "1:410c50b7b4d48fc587a584a14fe74cb96dfa855cd400a84ea216544bc24d9948"
+  name = "github.com/aruhier/go-netbox"
+  packages = [
+    "netbox/client/ipam",
+    "netbox/models",
+  ]
+  pruneopts = "UT"
+  revision = "60adf6e033ee4138754d7a4a71a1a02e7b047217"
 
 [[projects]]
   digest = "1:320e7ead93de9fd2b0e59b50fd92a4d50c1f8ab455d96bc2eb083267453a9709"
@@ -146,6 +165,14 @@
   pruneopts = "UT"
   revision = "346938d642f2ec3594ed81d874461961cd0faa76"
   version = "v1.1.0"
+
+[[projects]]
+  branch = "master"
+  digest = "1:7e5836b4a74d2a6b616234e9115d9ece1fc6609428fbd3850e5dc3111615ef57"
+  name = "github.com/digitalocean/go-netbox"
+  packages = ["netbox/models"]
+  pruneopts = "UT"
+  revision = "29433ec527e78486ea0a5758817ab672d977f90e"
 
 [[projects]]
   branch = "master"
@@ -279,7 +306,7 @@
   revision = "06c9ea3a335b7443026f8124b22619524420291b"
 
 [[projects]]
-  digest = "1:3aeb3431df1b40b8e416a731018a381841389dea128dcf4d52de590d6de9ecd4"
+  digest = "1:f665b5bdd51f7440060314d41bd27e645d962daafa3a32550a5435baab380cae"
   name = "github.com/hashicorp/go-getter"
   packages = [
     ".",
@@ -703,6 +730,9 @@
     "github.com/Preskton/go-netbox/netbox/client/ipam",
     "github.com/Preskton/go-netbox/netbox/client/tenancy",
     "github.com/Preskton/go-netbox/netbox/models",
+    "github.com/Preskton/terraform-provider-netbox/plugin/providers/netbox",
+    "github.com/aruhier/go-netbox/netbox/client/ipam",
+    "github.com/aruhier/go-netbox/netbox/models",
     "github.com/go-openapi/runtime/client",
     "github.com/go-openapi/strfmt",
     "github.com/hashicorp/terraform/helper/resource",

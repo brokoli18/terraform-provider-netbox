@@ -22,3 +22,7 @@
 [[constraint]]
   branch = "master"
   name = "github.com/Preskton/go-netbox"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/aruhier/go-netbox"

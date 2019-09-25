@@ -1,5 +1,5 @@
-build: test
-	gox -osarch="linux/amd64 windows/amd64 darwin/amd64" \
+build:
+	gox -osarch="windows/amd64" \
 	-output="pkg/{{.OS}}_{{.Arch}}/{{.OS}}-{{.Arch}}-terraform-provider-netbox" .
 
 test:
@@ -32,4 +32,4 @@ deps:
 	dep ensure -vendor-only
 	
 clean:
-	rm -rf pkg/
+	rm -r -fo pkg/

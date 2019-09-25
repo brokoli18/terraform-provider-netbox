@@ -5,8 +5,8 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/Preskton/go-netbox/netbox/client/ipam"
-	"github.com/Preskton/go-netbox/netbox/models"
+	"github.com/aruhier/go-netbox/netbox/client/ipam"
+	"github.com/aruhier/go-netbox/netbox/models"
 	"github.com/hashicorp/terraform/helper/schema"
 )
 
